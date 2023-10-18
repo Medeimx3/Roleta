@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta Russa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>ROLETA RUSSA: OS REIS</h1>
+    </header>
+
+    <div class="instruncoes" id="instruncao">
+        <p>Para começar cada jogador deve escolher um rei...</p>
+    </div>
+
+    <div class="resultado" id="resultados">
+        <p>Quando todos os jogadores tiverem escolhido clique em disparar!</p>
+    </div>
+
+    <div class="opcoes">
+        <div class="escolha" id="ke">
+            <img src="imagens/kespada.png" alt="espadas" width="177px" height="265px">
+        </div>
+
+        <div class="escolha" id="ko">
+            <img src="imagens/kouros.png" alt="ouros" width="177px" height="265px">
+        </div>
+
+        <div class="escolha" id="kp">
+            <img src="imagens/kpaus.png" alt="paus" width="177px" height="265px">
+        </div>
+
+        <div class="escolha" id="kc">
+            <img src="imagens/kcopas.png" alt="copas" width="177px" height="265px">
+        </div>
+    </div>
+
+    <div class="linha">
+        <div class="coluna" id="jogador1">
+            <p>JOGADOR 1: AGUARDANDO ESCOLHA</p>
+        </div>
+        <div class="coluna" id="jogador2">
+            <p>JOGADOR 2: AGUARDANDO ESCOLHA</p>
+        </div>
+        <div class="coluna" id="jogador3">
+            <p>JOGADOR 3: AGUARDANDO ESCOLHA</p>
+        </div>
+        <div class="coluna" id="jogador4">
+            <p>JOGADOR 4: AGUARDANDO ESCOLHA</p>
+        </div>
+    </div>
+    <div class="linha2">
+        <button class="button" id="disparo" onclick="game()">DISPARAR!</button>
+        <button class="button" id="reset" onclick="recarregar()">RESET!</button>
+    </div>
+
+    <script src="app.js" charset="UTF-8"></script>
+
+</body>
+
+</html>
